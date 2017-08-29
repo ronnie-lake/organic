@@ -11,15 +11,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .container {
 	width: 962px;
 	margin: 0 auto;
+	padding: 0 180px;
+	position: relative;
 }
 
 .header {
 	background: url(../img/main.png) no-repeat;
-	width: 1610px;
+	background-size: cover;
 	height: 915px;
 	margin: 0 auto;
 	position: relative;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 868px);
+	font-size: 0;
 
 	&:after {
 		content: '';
@@ -36,15 +39,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 	&__logo {
 		display: inline-block;
+		margin-left: 5px;
 		width: 73px;
 		height: 73px;
 		background: url(../img/logo.png) no-repeat;
-		margin: 20px 0 0 29px;
+		margin-top: 20px;
+		position: absolute;
+		top: 0;
+		left: -7px;
 	}
 
 	&__menu {
 		display: inline-block;
-		margin-left: 216px;
 		vertical-align: top;
 		margin-top: 50px;
 	}
@@ -75,7 +81,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 	}
 
 	&__text {
-		margin: 124px 0 0 9px;
+		margin-top: 154px;
+		margin-left: 9px;
 	}
 
 	&__caption {
